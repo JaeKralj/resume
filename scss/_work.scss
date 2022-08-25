@@ -1,0 +1,22 @@
+#work-history-section hr {
+  height: 0.0625rem;
+  background-color: var(--secondaryTextColor);
+  border: none;
+  margin-bottom: 1.5625rem;
+}
+
+.work-heading,
+.work-duration {
+  margin-bottom: 0.625rem;
+}
+
+.achievements {
+  list-style-type: disc;
+}
+
+@media (min-width: 600px) {
+  .work-history {
+    border-left: 1px solid var(--secondaryTextColor);
+    padding-left: 1.875rem;
+  }
+}

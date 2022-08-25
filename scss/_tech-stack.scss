@@ -1,0 +1,13 @@
+.stack-wrap {
+  width: max-content;
+  padding: 0.625rem;
+  margin: 0.625rem;
+  border: 1px solid var(--secondaryTextColor);
+  border-radius: 0.3125rem;
+}
+
+@media (min-width: 600px) {
+  .stacks-wrap {
+    display: flex;
+  }
+}

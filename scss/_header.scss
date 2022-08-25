@@ -1,0 +1,77 @@
+@use 'config' as c;
+
+.img-aval-wrap {
+  width: 18.75rem;
+  margin: 1.5625rem auto;
+  text-align: center;
+
+  display: flex;
+  gap: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .img-wrapper {
+    width: 9.375rem;
+    aspect-ratio: 1;
+
+    & .p-img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
+
+.profile {
+  & .p-name {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 2.5rem;
+  }
+
+  .profile .p-summary {
+    font-weight: 400;
+  }
+
+  .p-summary-link {
+    color: var(--mainLinkColor);
+
+    &:hover {
+      color: var(--mainTextColor);
+    }
+  }
+
+  & .contact-email {
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+
+    &:hover {
+      color: var(--mainLinkColor);
+    }
+  }
+}
+
+.online-dot {
+  $width: 0.3125rem;
+
+  display: inline-block;
+  width: $width;
+  aspect-ratio: 1;
+  background-color: var(--mainLinkColor);
+  border-radius: calc(#{$width} / 2);
+}
+
+@media (min-width: 600px) {
+  #header {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+
+    .p-name {
+      text-align: left;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

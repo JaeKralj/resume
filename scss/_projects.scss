@@ -1,0 +1,27 @@
+@use 'config' as c;
+.project {
+  display: block;
+  padding: 0.9375rem;
+  border-bottom: 1px solid var(--secondaryTextColor);
+
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  align-items: center;
+  justify-content: space-between;
+
+  &.project-one {
+    border-top: 1px solid var(--secondaryTextColor);
+  }
+
+  .project-link {
+    text-align: center;
+    border: 1px solid var(--mainLinkColor);
+    border-radius: 5px;
+    padding: 0.3125rem;
+
+    &:hover {
+      color: var(--mainLinkColor);
+      border-color: var(--secondaryTextColor);
+    }
+  }
+}

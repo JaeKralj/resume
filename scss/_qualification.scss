@@ -1,0 +1,11 @@
+.fa-star {
+  color: #f3d21d;
+}
+
+.qualification-link {
+  color: var(--mainLinkColor);
+
+  &:hover {
+    color: var(--mainTextColor);
+  }
+}
